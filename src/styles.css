@@ -1,0 +1,27 @@
+@import "../node_modules/bootstrap/dist/css/bootstrap.css";
+
+
+body{
+    background-color:  #e0e0e0;
+
+}
+.navbar{
+    background-color: rgb(218 215 215)
+}
+.basic{
+    position: absolute !important;
+    top: 8%  !important;
+    left: 228px  !important;
+    font-weight : bold  !important;
+}
+
+.all {
+    position: absolute !important;
+    top:  14% !important;
+    left: 410px !important;
+}
+
+.navbar{
+    padding: 30px;
+   
+}

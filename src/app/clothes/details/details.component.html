@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6"
+        class="list-group-item clearfix">
+        <div class="pull-left"  >
+          <h4 class="list-group-item-heading">{{ clothe.email }}</h4>
+          <p class="list-group-item-text">{{ clothe.name }}</p>
+          <p class="list-group-item-text">{{ clothe.number }}</p>
+          <a class="btn btn-primary" routerLink = "./Edit">Edit</a>
+          <a class="btn btn-danger" (click)="onDeleteClothe()" style="cursor: pointer;">Delete</a>
+        </div> 
+      
+    </div>
+   
+  </div>
+  
+</div>

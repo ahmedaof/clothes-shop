@@ -1,0 +1,10 @@
+.list-group-item.clearfix {
+    border: 1px;
+}
+.pull-left{
+    border:1px solid rgba(0,0,0,.125);
+    padding:20px;
+}
+a{
+    margin: 5px !important;
+}

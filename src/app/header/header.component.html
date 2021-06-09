@@ -1,0 +1,40 @@
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      
+      <a
+      routerLinkActive ="active" 
+      routerLink="/clothes" class="navbar-brand {{authservice.basic}}">clothes Shop</a>
+    
+
+    
+      <ng-template [ngIf] = "authservice.hide==false">
+      
+        <a
+        routerLinkActive ="active" class="navbar-brand"
+        routerLink="/signin">Sign In</a>
+      </ng-template>
+  
+      <div *ngIf ="authservice.hide==true" class="all">
+        <a
+        routerLinkActive ="active" class="navbar-brand" 
+        routerLink="/signup">add admins</a>
+        <a
+        routerLinkActive ="active" class="navbar-brand"
+        routerLink="/clothes/new">Add Clothes</a>
+        <a
+        routerLinkActive ="active" class="navbar-brand"v
+        (click)="onFetch()"
+        style="cursor: pointer;">fetch</a>
+        <a
+        routerLinkActive ="active" class="navbar-brand"
+        (click)="onsave()" style="cursor: pointer;">save</a>
+        <a
+        routerLinkActive ="active" class="navbar-brand logout"
+        (click)="logOut()" style="cursor: pointer;">logout</a>
+      </div>
+
+      </div>
+
+  </div>
+</nav>

@@ -1,0 +1,21 @@
+
+<div class="container">
+
+  <div class="row">
+    <div class="col-sm-6">
+      <a
+      class="list-group-item clearfix"
+      *ngFor="let clothe of clothes"
+      routerLinkActive ="active"
+      [routerLink]="['/clothes',clothe.id]">
+      <div class="pull-left">
+        <p class="list-group-item-text">{{ clothe.email }}</p>
+        <p class="list-group-item-text">{{ clothe.name }}</p>
+      </div>
+    </a>
+    </div>
+    <div class="col-sm-6">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
